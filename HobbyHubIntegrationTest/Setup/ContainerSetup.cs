@@ -44,8 +44,14 @@ public class ContainerSetup
             
             if (_servicePostQueryContainer is not null)
             {
-                await _serviceHobbyContainer.StopAsync();
-                await _serviceHobbyContainer.DisposeAsync();
+                await _servicePostQueryContainer.StopAsync();
+                await _servicePostQueryContainer.DisposeAsync();
+            }
+            
+            if (_servicePostCommandContainer is not null)
+            {
+                await _servicePostCommandContainer.StopAsync();
+                await _servicePostCommandContainer.DisposeAsync();
             }
 
 
@@ -181,7 +187,28 @@ public class ContainerSetup
 
 
         await _servicePostQueryContainer.StartAsync();
+            
+        _servicePostCommandContainer = new ContainerBuilder()
+            .WithImage("janinevansaaze/post_query_service:latest") // Vervang met je eigen image
+            .WithPortBinding(0, 8083)
+            .WithExposedPort(8083)
+            .WithNetwork(_network)
+            .WithNetworkAliases("post_query_service")
+            .WithEnvironment("POSTGRES_USER", "testuser")
+            .WithEnvironment("POSTGRES_HOST", "postgres")
+            .WithEnvironment("POSTGRES_PORT", "5432")
+            .WithEnvironment("POSTGRES_PASSWORD", "testpassword")
+            .WithEnvironment("RabbitMQHost", "rabbitmq")
+            .WithEnvironment("RabbitMQPort", "5672")
+            .WithEnvironment("RabbitMQUsername", "testuser")
+            .WithEnvironment("RabbitMQPassword", "testpassword")
+            .WithWaitStrategy(Wait.ForUnixContainer().UntilPortIsAvailable(8080))
+            .WithImagePullPolicy(PullPolicy.Always)
+            .WithCleanUp(false)
+            .Build();
 
+        await _servicePostCommandContainer.StartAsync();
+        
         //127.0.0.1 voor database, maar docker container heet bijvoorbeeld postgress
         //Pipeline testing: niet gebruik maken van guest guest wachtwoord -> ander wachtwoord en user
         //.WithWaitStragetty(wait.forunixcontainer).untillportisAvailable({PortNummer})
