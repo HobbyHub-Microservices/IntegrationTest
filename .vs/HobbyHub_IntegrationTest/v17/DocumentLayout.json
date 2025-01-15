@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\helper\\rabbitmqpublished.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\helper\\rabbitmqpublished.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\setup\\containersetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\setup\\containersetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\integrationtest\\hobbyhubintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\integrationtest\\hobbyhubintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\setup\\sharedcontainersetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\setup\\sharedcontainersetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\setup\\containercollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\setup\\containercollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|c:\\users\\frizb\\desktop\\hobbyhub_integrationtest\\hobbyhub_integrationtest\\hobbyhub_integrationtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9F4D5054-DACA-48BE-882B-1899A1C8DAC4}|HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj|solutionrelative:hobbyhub_integrationtest\\hobbyhub_integrationtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RabbitMQPublished.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Helper\\RabbitMQPublished.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\Helper\\RabbitMQPublished.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Helper\\RabbitMQPublished.cs",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\Helper\\RabbitMQPublished.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAD4vxQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T12:33:10.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HobbyHubIntegrationTest.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\IntegrationTest\\HobbyHubIntegrationTest.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\IntegrationTest\\HobbyHubIntegrationTest.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\IntegrationTest\\HobbyHubIntegrationTest.cs*",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\IntegrationTest\\HobbyHubIntegrationTest.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T12:16:47.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HobbyHub_IntegrationTest",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-14T12:16:25.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContainerCollection.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\ContainerCollection.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\Setup\\ContainerCollection.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\ContainerCollection.cs",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\Setup\\ContainerCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T11:34:05.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContainerSetup.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\ContainerSetup.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\Setup\\ContainerSetup.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\ContainerSetup.cs",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\Setup\\ContainerSetup.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAwwLQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T11:34:03.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SharedContainerSetup.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\SharedContainerSetup.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\Setup\\SharedContainerSetup.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\Setup\\SharedContainerSetup.cs",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\Setup\\SharedContainerSetup.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T11:33:27.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "HobbyHub_IntegrationTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Frizb\\Desktop\\HobbyHub_IntegrationTest\\HobbyHub_IntegrationTest\\UnitTest1.cs*",
+              "RelativeToolTip": "HobbyHub_IntegrationTest\\UnitTest1.cs*",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAQwIcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T10:40:23.61Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
