@@ -146,9 +146,9 @@ public class ContainerSetup
         await _serviceUserContainer.StartAsync();
 
         _serviceHobbyContainer = new ContainerBuilder()
-           .WithImage("janinevansaaze/hobbyservice:latest") // Vervang met je eigen image
-           .WithPortBinding(0, 8081)
-           .WithExposedPort(8081)
+           .WithImage("janinevansaaze/hobbyservice:latest") 
+           .WithPortBinding(0, 8080)
+           .WithExposedPort(8080)
            .WithNetwork(_network)
            .WithNetworkAliases("hobbyservice")
            .WithEnvironment("POSTGRES_USER", "testuser")
@@ -167,15 +167,16 @@ public class ContainerSetup
         await _serviceHobbyContainer.StartAsync();
 
         _servicePostQueryContainer = new ContainerBuilder()
-            .WithImage("janinevansaaze/post_query_service:latest") // Vervang met je eigen image
-            .WithPortBinding(0, 8082)
-            .WithExposedPort(8082)
+            .WithImage("janinevansaaze/post_query_service:latest") 
+            .WithPortBinding(0, 8080)
+            .WithExposedPort(8080)
             .WithNetwork(_network)
             .WithNetworkAliases("post_query_service")
             .WithEnvironment("POSTGRES_USER", "testuser")
             .WithEnvironment("POSTGRES_HOST", "postgres")
             .WithEnvironment("POSTGRES_PORT", "5432")
             .WithEnvironment("POSTGRES_PASSWORD", "testpassword")
+            .WithEnvironment("IntegrationMode", true.ToString())
             .WithEnvironment("RabbitMQHost", "rabbitmq")
             .WithEnvironment("RabbitMQPort", "5672")
             .WithEnvironment("RabbitMQUsername", "testuser")
@@ -184,20 +185,20 @@ public class ContainerSetup
             .WithImagePullPolicy(PullPolicy.Always)
             .WithCleanUp(false)
             .Build();
-
-
+        
         await _servicePostQueryContainer.StartAsync();
-            
+        
         _servicePostCommandContainer = new ContainerBuilder()
-            .WithImage("janinevansaaze/post_query_service:latest") // Vervang met je eigen image
-            .WithPortBinding(0, 8083)
-            .WithExposedPort(8083)
+            .WithImage("janinevansaaze/post_command_service:latest") 
+            .WithPortBinding(0, 8080)
+            .WithExposedPort(8080)
             .WithNetwork(_network)
-            .WithNetworkAliases("post_query_service")
+            .WithNetworkAliases("post_command_service")
             .WithEnvironment("POSTGRES_USER", "testuser")
             .WithEnvironment("POSTGRES_HOST", "postgres")
             .WithEnvironment("POSTGRES_PORT", "5432")
             .WithEnvironment("POSTGRES_PASSWORD", "testpassword")
+            .WithEnvironment("IntegrationMode", true.ToString())
             .WithEnvironment("RabbitMQHost", "rabbitmq")
             .WithEnvironment("RabbitMQPort", "5672")
             .WithEnvironment("RabbitMQUsername", "testuser")
@@ -214,18 +215,6 @@ public class ContainerSetup
         //.WithWaitStragetty(wait.forunixcontainer).untillportisAvailable({PortNummer})
         //With expose port
         //with port binding
-
- 
-
-      //  _servicePostCommandContainer = new ContainerBuilder()
-       //     .WithImage("janinevansaaze/post_command_service:latest") // Vervang met je eigen image
-       //     .WithEnvironment("ConnectionStrings__Database", _postgresContainer.GetConnectionString())
-       //     .WithEnvironment("RabbitMQ__Host", _rabbitMqContainer.Hostname)
-      //      .WithEnvironment("RabbitMQ__Port", _rabbitMqContainer.GetMappedPublicPort(5672).ToString())
-       //     .WithPortBinding(5053, 80)
-      //      .WithCleanUp(false)
-        //    .Build();
-        
 
     }
 
