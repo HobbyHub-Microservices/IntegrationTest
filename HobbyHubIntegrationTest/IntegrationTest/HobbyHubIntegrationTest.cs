@@ -53,7 +53,6 @@ namespace HobbyHubIntegrationTest.IntegrationTest
         }
         
         [Fact, TestPriority(2)]
-        
         public async Task Step2_Submit_A_Post_And_Check_If_It_Exists()
         {
             var client = new HttpClient();
@@ -112,14 +111,42 @@ namespace HobbyHubIntegrationTest.IntegrationTest
         [Fact, TestPriority(3)]
         public async Task Step3_Delete_User_And_Check_If_It_Exists()
         {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JWT_SECRET_KEY);
+            try
+            {
+                var deleteResponse = await client.DeleteAsync($"http://{_containerSetup._serviceUserContainer.Hostname}:{_containerSetup._serviceUserContainer.GetMappedPublicPort(8080)}/api/Users/test/delete-account?keycloakId=01010101-ffff-0101-ffff-01ff01ff01ff01");
+                _testOutputHelper.WriteLine($"Status Code: {deleteResponse.StatusCode}");
+                var responseContent = await deleteResponse.Content.ReadAsStringAsync();
+                _testOutputHelper.WriteLine($"Response Body: {responseContent}");
+
+                Assert.True(deleteResponse.IsSuccessStatusCode, "The DELETE request failed.");
+            }
+            catch (Exception e)
+            {
+                _testOutputHelper.WriteLine(e.ToString());
+            }
             
+            
+           //test/delete-account?keycloakId=01010101-ffff-0101-ffff-01ff01ff01ff01
+           
+           
            
         }
         
         [Fact, TestPriority(4)]
         public async Task Step4_Check_If_Posts_Still_Exists()
         {
+            await Task.Delay(TimeSpan.FromSeconds(30));
             
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JWT_SECRET_KEY);
+            
+            var getResponse = await client.GetAsync($"http://{_containerSetup._servicePostCommandContainer.Hostname}:{_containerSetup._servicePostCommandContainer.GetMappedPublicPort(8080)}/api/Post/test/1"); // Assuming the ID is 1
+            Assert.True(getResponse.StatusCode == System.Net.HttpStatusCode.NotFound);
+            
+            var getqueryResponse = await client.GetAsync($"http://{_containerSetup._servicePostQueryContainer.Hostname}:{_containerSetup._servicePostQueryContainer.GetMappedPublicPort(8080)}/api/query/Post/test/1"); // Assuming the ID is 1
+            Assert.True(getResponse.StatusCode == System.Net.HttpStatusCode.NotFound);
            
         }
   
